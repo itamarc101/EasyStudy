@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TeacherProfile">
+
+    <Button
+        android:id="@+id/messagesTeachButton"
+        android:layout_width="128dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="276dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="679dp"
+        android:text="Messages"
+        app:backgroundTint="#FF9900"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <CalendarView
+        android:id="@+id/calendarMettings"
+        android:layout_width="409dp"
+        android:layout_height="311dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="415dp"
+        android:layout_height="230dp"
+        app:backgroundTint="#FF9900"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.327"
+        app:srcCompat="@drawable/__2024_02_13_182342" />
+
+    <Button
+        android:id="@+id/links"
+        android:layout_width="116dp"
+        android:layout_height="111dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="1dp"
+        android:text="Links"
+        app:backgroundTint="#FF9900"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toStartOf="@+id/profileEdit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="111dp"
+        android:layout_height="52dp"
+        android:text="Logout"
+        app:backgroundTint="#FF9900"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.013"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="-1dp" />
+
+    <Button
+        android:id="@+id/meetings"
+        android:layout_width="116dp"
+        android:layout_height="111dp"
+        android:layout_marginStart="288dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="1dp"
+        android:text="Meetings"
+        app:backgroundTint="#FF9900"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/profileEdit"
+        android:layout_width="116dp"
+        android:layout_height="111dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="28dp"
+
+        android:layout_marginBottom="1dp"
+        android:text="Profile"
+        app:backgroundTint="#FF9900"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toStartOf="@+id/meetings"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
